@@ -17,8 +17,12 @@
 
 > [!WARNING]  
 > first version:
+> backend:
+> - connect port: 301
 > - read variables
 > - write variables type float, etc..
+> frontend:
+> - select different themes..
 
 > [!CAUTION]
 > demo version
