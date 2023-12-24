@@ -22,7 +22,8 @@
 > - [ ] connect port: 301
 > - [ ] read variables
 > - [ ] write variables type float, etc..
-> - [ ] Blockly MQTT 
+> - [ ] Blockly add MQTT
+> - [ ] Blockly add Siemens PLC driver snap7
 > - [x] connect port: 851
 > - [x] paralell process
 
