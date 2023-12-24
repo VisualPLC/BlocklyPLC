@@ -24,6 +24,8 @@
 > - [ ] write variables type float, etc..
 > - [ ] Blockly add MQTT
 > - [ ] Blockly add Siemens PLC driver node-snap7...
+> - [ ] Blockly motion TwinCAT with PLC.
+> - [ ] Blockly motion TwinCAT direct without PLC.
 > - [x] connect port: 851
 > - [x] paralell process
 
