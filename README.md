@@ -16,7 +16,9 @@
 > You have to decide in which software and programming languages ​​to develop the project, for example Node.js+express.js or python, etc...
 
 > [!WARNING]  
-> first version
+> first version:
+> - read variables
+> - write variables type float, etc..
 
 > [!CAUTION]
 > demo version
