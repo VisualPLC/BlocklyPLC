@@ -19,8 +19,8 @@
 > first version:
 
 > backend:
-> - [ ] connect port: 301
 > - [ ] add Block read variables PLC
+> - [ ] connect port: 301
 > - [ ] write variables type float, etc..
 > - [ ] Blockly add MQTT
 > - [ ] Blockly add Siemens PLC driver node-snap7...
