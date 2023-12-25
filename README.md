@@ -28,9 +28,11 @@
 > - [ ] Blockly motion TwinCAT direct without PLC.
 > - [x] connect port: 851
 > - [x] paralell process
+> - [x] add more Blocks
 
 > frontend:
 > - [ ] Select different themes..
+> - [ ] toolbox add icons center, zoom+. zoom- - 
 > - [x] Database diferents programm.
 
 > Docker Hub:
