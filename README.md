@@ -33,6 +33,7 @@
 > frontend:
 > - [ ] Select different themes..
 > - [ ] toolbox add icons center, zoom+. zoom- - 
+> - [ ] be able to observe the server log on the frontend.
 > - [x] Database diferents programm.
 
 > Docker Hub:
