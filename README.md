@@ -50,7 +50,8 @@
 > - [x] Database diferents programm.
 
 > Docker Hub:
-> - [ ] first version.
+> - [ ] first version Docker image.
+> - [ ] Git actions create Docker Hub.
 ***
 > [!CAUTION]
 > demo version
