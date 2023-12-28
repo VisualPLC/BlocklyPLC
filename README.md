@@ -30,19 +30,23 @@
 > Backend:
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
-> - [ ] add Block read variable type float PLC
+> - [ ] add Block read variable type float PLC, and logic_compare two float.
 > - [ ] connect port: 301 without PLC runtime, direct I/O
 
 > - [ ] Blockly add MQTT
+
 > - [ ] Blockly add Siemens PLC driver node-snap7...
+
 > - [ ] Blockly motion TwinCAT with PLC.
 > - [ ] Blockly motion TwinCAT direct without PLC.
+
 > - [x] connect port: 851
 > - [x] paralell process
 > - [x] add more Blocks
 > - [x] add Block read variable type number PLC and control, and logic
 > - [x] add logic_compare and block Read_variableNumber TwinCAT
-> - [X] write variable type float, etc.. => write variable "GVL_Test.TestREAL" value number 12.5
+> - [x] write variable type float => write variable "GVL_Test.TestREAL" value number 12.5
+> - [x] write variable type string=> write variable "GVL_Test.TestSTRING" "hello"
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
 
 > Frontend:
