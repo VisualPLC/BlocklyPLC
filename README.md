@@ -4,12 +4,19 @@
 
 ![](./assets/VisualPLC_BlocklyPLC_TwinCAT_read_variable_Number.JPG)
 
+
 ***
 > [!NOTE]
+> ### setup the dev environment:
+- OS: Windows
+
+> ### Beckhoff TwinCAT Shell XAE and XAR:
 > download Beckhoff TE1000-twincat-3-engineering:
 > - https://www.beckhoff.com/es-es/products/automation/twincat/texxxx-twincat-3-engineering/te1000.html?
 
 > install Beckhoff TwinCAT Shell or previously install visual studio 2017,2019 possible versions community, professional or enterprise and then install TE1000 TwinCAT Shell.
+
+- Docker: Linux, Raspberry. (VM - virtual machine)
 ***
 > [!TIP]
 > open project TwinCAT TC3_BlocklyPLC.sln and download
