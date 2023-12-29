@@ -61,6 +61,8 @@
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
 > <span style="color:orange">**Docker Hub**:</span>
+
+> $\color{green}{test}$
 > - [ ] first version Docker image.
 > - [ ] Git actions create Docker Hub.
 ***
