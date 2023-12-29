@@ -33,6 +33,11 @@
 > - [ ] connect port: 301 without PLC runtime, direct I/O
 
 > - [ ] Blockly add MQTT
+>      - https://github.com/runtimevic/mqtt-node
+>      - https://github.com/runtimevic/mqtt-custom-dashboard-node-js
+>      - https://github.com/Gr4vity4/mqttws31
+>      - https://github.com/Gr4vity4/MQTT-BLOCKLY
+>      - https://github.com/frangoteam/FUXA/blob/master/server/runtime/devices/mqtt/index.js
 
 > - [ ] Blockly add Siemens PLC driver node-snap7...
 
@@ -52,7 +57,8 @@
 > - [ ] Select different themes..
 > - [ ] Be able to observe the server log on the frontend or Logview file
 > - [x] Database diferents programm.
-> - [x] toolbox add icons center, zoom+. zoom-- => https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
+> - [x] toolbox add icons center, zoom+. zoom--
+>      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
 > Docker Hub:
 > - [ ] first version Docker image.
