@@ -32,6 +32,9 @@
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
 > - [ ] connect port: 301 without PLC runtime, direct I/O
 
+> - [ ] database sqlite export register programm or all programs
+> - [ ] database sqlite import register programm or all programs
+
 > - [ ] Blockly add MQTT
 >      - https://github.com/runtimevic/mqtt-node
 >      - https://github.com/runtimevic/mqtt-custom-dashboard-node-js
@@ -54,9 +57,11 @@
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
 
 > ### $\textcolor{yellow}{Frontend:}$
+> - [ ] button export register programm or all programs database sqlite
+> - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
 > - [ ] Be able to observe the server log on the frontend or Logview file
-> - [x] Database diferents programm.
+> - [x] Database sqlite diferents programm, edit, create,delete.
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
