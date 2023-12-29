@@ -4,7 +4,6 @@
 
 ![](./assets/VisualPLC_BlocklyPLC_TwinCAT_read_variable_Number.JPG)
 
-
 ***
 > [!NOTE]
 > ### setup the dev environment:
@@ -51,9 +50,9 @@
 
 > Frontend:
 > - [ ] Select different themes..
-> - [ ] toolbox add icons center, zoom+. zoom- - 
-> - [ ] be able to observe the server log on the frontend.
+> - [ ] Be able to observe the server log on the frontend or Logview file
 > - [x] Database diferents programm.
+> - [x] toolbox add icons center, zoom+. zoom-- => https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
 > Docker Hub:
 > - [ ] first version Docker image.
