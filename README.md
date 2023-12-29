@@ -26,7 +26,7 @@
 > [!WARNING]  
 > first version:
 
-> __Backend__:
+> ### $\textcolor{yellow}{Backend:}$
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
@@ -53,14 +53,12 @@
 > - [x] write variable type string=> write variable "GVL_Test.TestSTRING" "hello"
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
 
-> __Frontend__:
+> ### $\textcolor{yellow}{Frontend:}$
 > - [ ] Select different themes..
 > - [ ] Be able to observe the server log on the frontend or Logview file
 > - [x] Database diferents programm.
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
-
-> <span style="color:orange">**Docker Hub**:</span>
 
 > ### $\textcolor{yellow}{Docker\ Hub:}$
 > - [ ] first version Docker image.
