@@ -60,7 +60,7 @@
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
-> __Docker Hub__:
+> <span style="color:orange">**Docker Hub**:</span>
 > - [ ] first version Docker image.
 > - [ ] Git actions create Docker Hub.
 ***
