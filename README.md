@@ -71,5 +71,4 @@
 ***
 > [!CAUTION]
 > demo version
-***
-<span style="color:blue">Este texto será de color azul</span>
+
