@@ -43,6 +43,8 @@
 >      - https://github.com/Gr4vity4/mqttws31
 >      - https://github.com/Gr4vity4/MQTT-BLOCKLY
 >      - https://github.com/frangoteam/FUXA/blob/master/server/runtime/devices/mqtt/index.js
+>      - https://github.com/jdiamond/MQTT.ts/tree/master/examples/node-typescript
+>      - https://www.emqx.com/en/blog/mqtt-js-tutorial
 
 > - [ ] Blockly add Siemens PLC driver node-snap7...
 
