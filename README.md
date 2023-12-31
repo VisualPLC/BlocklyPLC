@@ -32,6 +32,8 @@
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
 > - [ ] connect port: 301 without PLC runtime, direct I/O
 
+> - [ ] Document endpoints swagger
+
 > - [ ] database sqlite export register programm or all programs
 > - [ ] database sqlite import register programm or all programs
 
