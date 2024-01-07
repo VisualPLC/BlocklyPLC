@@ -32,6 +32,7 @@
 > first version:
 
 > ### $\textcolor{yellow}{Backend:}$
+> - [ ] TwinCAT check port 300 IO=ADS device description
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
