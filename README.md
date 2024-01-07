@@ -68,6 +68,8 @@
 >      - add parameter bareClient: true/false. By providing bareClient setting, the client connects to the router or target and nothing else. After that, the client can be used to read/write data. However, connection losses etc. need to be handled by the user.
 
 > ### $\textcolor{yellow}{Frontend:}$
+> - [ ] TwinCAT connnect parameters change names, targetAmsNetId and targetAdsPort
+> - [ ] comments Blocks, tooltip or ...
 > - [ ] toolbar customize: divide lightBlocks and PLCTwinCATBlocks.
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
