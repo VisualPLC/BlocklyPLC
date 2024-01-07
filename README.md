@@ -4,6 +4,8 @@
 
 ![](./assets/VisualPLC_BlocklyPLC_TwinCAT_read_variable_Number.JPG)
 
+![](./assets/Blockly_TwinCAT_port_301_without_PLC_bareClient.JPG)
+
 ***
 > [!NOTE]
 > ### Setup the dev environment:
