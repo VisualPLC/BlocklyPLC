@@ -3,9 +3,11 @@
 ![](./assets/VisualPLC.JPG)
 
 ![](./assets/VisualPLC_BlocklyPLC_TwinCAT_read_variable_Number.JPG)
-
+***
+### parameter bareclient without PLC, port:301:
 ![](./assets/Blockly_TwinCAT_port_301_without_PLC_bareClient.JPG)
 
+[TwinCAT ports](https://infosys.beckhoff.com/content/1033/tcadscommon/12439473419.html?id=2313713130539198092)
 ***
 > [!NOTE]
 > ### Setup the dev environment:
