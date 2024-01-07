@@ -11,7 +11,7 @@
 				<Cpu CpuId="6"/>
 			</Settings>
 			<Tasks>
-				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="301">
+				<Task Id="2" CreateSymbols="true" Priority="1" CycleTime="100000" AmsPort="301">
 					<Name>Task 2</Name>
 					<Vars VarGrpType="1" InsertType="1">
 						<Name>Inputs</Name>
@@ -151,6 +151,7 @@
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
 		<OwnerA Name="TIRT^Task 2">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 2 (EK1100)^Term 3 (EL2008)">
 				<Link VarA="Outputs^output_01" VarB="Channel 1^Output"/>

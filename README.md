@@ -30,7 +30,6 @@
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
-> - [ ] connect port: 301 without PLC runtime, direct I/O
 
 > - [ ] Document endpoints swagger
 
@@ -59,8 +58,11 @@
 > - [x] write variable type float => write variable "GVL_Test.TestREAL" value number 12.5
 > - [x] write variable type string=> write variable "GVL_Test.TestSTRING" "hello"
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
+> - [x] connect port: 301 without PLC runtime, direct I/O
+>      - add parameter bareClient: true/false. By providing bareClient setting, the client connects to the router or target and nothing else. After that, the client can be used to read/write data. However, connection losses etc. need to be handled by the user.
 
 > ### $\textcolor{yellow}{Frontend:}$
+> - [ ] toolbar customize: divide lightBlocks and PLCTwinCATBlocks.
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
