@@ -32,6 +32,11 @@
 > first version:
 
 > ### $\textcolor{yellow}{Backend:}$
+> - [ ] add Block WaitUntil, idea Robot ABB Rapid..., see manual Rapid
+>      - WaitUntil \inpos, b_GripperClosed = TRUE;
+>      - WaitUntil \inpos, diGripperClosed = 1;
+>      - https://library.e.abb.com/public/688894b98123f87bc1257cc50044e809/Technical%20reference%20manual_RAPID_3HAC16581-1_revJ_en.pdf
+>      - https://search.abb.com/library/Download.aspx?DocumentID=3HAC050917-005&LanguageCode=es&DocumentPartId=&Action=Launch
 > - [ ] TwinCAT check port 300 IO=ADS device description
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
