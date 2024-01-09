@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_PneumaticAxisErrors" Id="{e2fbdacd-f77d-473b-86e3-9440b104e267}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_PneumaticAxisErrors :
+(
+    eNoError := 0,
+    eExtractTimedOut := 1, //Extraction movement not done in expected time
+    eRetractTimedOut := 2, //Retraction movement not done in expected time
+    eNotMovingExtract := 3, //Extract command not executed, cylinder stays in place
+    eNotMovingRetract := 4, //Retract command not executed, cylinder stays in place
+    eInterlockOn := 5, //Interlock signal on, cylinder retracts to Limit Bwd
+    eNoPSSPermit := 6, //Permit signal lost, cylinder retracts to Limit Bwd
+    eAirPressureError := 7 //Air pressure signal out of range
+):= eNoError;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

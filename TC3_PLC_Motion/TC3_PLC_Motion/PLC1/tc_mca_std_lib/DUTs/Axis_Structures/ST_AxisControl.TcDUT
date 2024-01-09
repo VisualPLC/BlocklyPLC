@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_AxisControl" Id="{c02b2c99-be98-4acd-b0cb-dc10c1ff77f2}">
+    <Declaration><![CDATA[(*These are parameters that are used to initiate axis movements
+They are commands that are commonly used commands*)
+TYPE ST_AxisControl :
+STRUCT
+    //Actions from controls system
+    bExecute: BOOL; //Rising edge to execute some motion FB's
+    bReset: BOOL; //Reset axis from Error state
+    bStop: BOOL;
+    bHalt: BOOL;
+    bEnable: BOOL; //Enable axis drive
+    bJogFwd: BOOL;
+    bJogBwd: BOOL;
+    bInterlockFwd: BOOL := FALSE; //Bit for interlocking motors in the positive direction
+    bInterlockBwd: BOOL := FALSE; //Bit for interlocking motors in the negative direction
+    eCommand: E_MotionFunctions;
+    fVelocity: LREAL; //Velocity must be specified
+    fJogVelocity: LREAL; //Jogging velocity
+    fAcceleration: LREAL; //Not all FBs use, 0 is NC default
+    fDeceleration: LREAL;
+    fPosition: LREAL; //The position to move to for an absolute move and the amount to move in a relative move
+    bHWMaskActive: BOOL := FALSE;
+    fMaskedTemperature: LREAL := 0.0;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

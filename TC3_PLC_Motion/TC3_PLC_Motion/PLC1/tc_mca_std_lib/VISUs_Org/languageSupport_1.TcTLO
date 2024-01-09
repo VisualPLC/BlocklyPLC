@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <TextList Name="languageSupport_1" Id="{9f29394e-bdcd-42f1-b5f3-97a1da2d997e}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="TextListObject">
+          <v n="UniqueIdGenerator">"0"</v>
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"axesAvailable"</v>
+              <v n="TextDefault">"PLC Axes available: %d"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v>Alt language</v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"velocity"</v>
+              <v n="TextDefault">"Velocity:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"actposition"</v>
+              <v n="TextDefault">"Actual Position:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"enable"</v>
+              <v n="TextDefault">"Enable Axis"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"enFW"</v>
+              <v n="TextDefault">"Fwd Enable"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"enBW"</v>
+              <v n="TextDefault">"Bwd Enable"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"axisSel"</v>
+              <v n="TextDefault">"Axis Selected:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"actVelocity"</v>
+              <v n="TextDefault">"Actual Velocity:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"errID"</v>
+              <v n="TextDefault">"Error ID:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bEnabled"</v>
+              <v n="TextDefault">"Axis Enabled"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bCommandAborted"</v>
+              <v n="TextDefault">"Command Aborted"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bBusy"</v>
+              <v n="TextDefault">"Busy"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bDone"</v>
+              <v n="TextDefault">"Command Done"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bResetDone"</v>
+              <v n="TextDefault">"Reset Complete"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bHomed"</v>
+              <v n="TextDefault">"Calibrated"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bFwEnabled"</v>
+              <v n="TextDefault">"Fwd movement enabled"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bBwEnabled"</v>
+              <v n="TextDefault">"Bwd movement enabled"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bError"</v>
+              <v n="TextDefault">"Error"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fVelocity"</v>
+              <v n="TextDefault">"Target Velocity:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fAcceleration"</v>
+              <v n="TextDefault">"Target Accel.:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fDeceleration"</v>
+              <v n="TextDefault">"Target Decel.:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fPosition"</v>
+              <v n="TextDefault">"Target Position:"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"moveAbsolute"</v>
+              <v n="TextDefault">"Absolute position move"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"toggle"</v>
+              <v n="TextDefault">"Toggle"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"moveVelocity"</v>
+              <v n="TextDefault">"Constant velocity move"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bExecute"</v>
+              <v n="TextDefault">"Motion function executed"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"moveRelative"</v>
+              <v n="TextDefault">"Relative position move"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"moveModulo"</v>
+              <v n="TextDefault">"Modulo position move"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"reset"</v>
+              <v n="TextDefault">"Reset axis"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"stop"</v>
+              <v n="TextDefault">"Stop motion"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"jogBw"</v>
+              <v n="TextDefault">"Jog Backward"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"jogFw"</v>
+              <v n="TextDefault">"Jog Forward"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bGeared"</v>
+              <v n="TextDefault">"In Gear"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"masterGear"</v>
+              <v n="TextDefault">"Master Axis"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"gearRatio"</v>
+              <v n="TextDefault">"Gear Ratio"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"gearIn"</v>
+              <v n="TextDefault">"Gear In"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"gearOut"</v>
+              <v n="TextDefault">"Gear Out"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToLimit_Bwd"</v>
+              <v n="TextDefault">"Bwd Limit"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToLimit_Fwd"</v>
+              <v n="TextDefault">"Fwd Limit"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToRef_Bwd"</v>
+              <v n="TextDefault">"Home Switch Bwd "</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToRef_Fwd"</v>
+              <v n="TextDefault">"Home Switch Fwd "</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_Bwd"</v>
+              <v n="TextDefault">"Enc Pulse Bwd "</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_Fwd"</v>
+              <v n="TextDefault">"Enc Pulse Fwd"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_viaBwdLimit"</v>
+              <v n="TextDefault">"Enc Pulse via Bwd Limit"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_viaFwdLimit"</v>
+              <v n="TextDefault">"Enc Pulse via Fwd Limit"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToBlock_Bwd"</v>
+              <v n="TextDefault">"Home To Block Bwd Lag Based"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeToBlock_Fwd"</v>
+              <v n="TextDefault">"Home To Block Fwd Lag Based"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eHomeDirect"</v>
+              <v n="TextDefault">"Home Direct"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fHomePosition"</v>
+              <v n="TextDefault">"Set Pos after Homing"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fHomeFinishDistance"</v>
+              <v n="TextDefault">"Relative Move after Homing"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"halt"</v>
+              <v n="TextDefault">"Halt Motion"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bInterlockBwd"</v>
+              <v n="TextDefault">"Interlock Bwd"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bInterlockFwd"</v>
+              <v n="TextDefault">"Interlock Fwd"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"Home"</v>
+              <v n="TextDefault">"HOME"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eWriteParameter"</v>
+              <v n="TextDefault">"Write Parameter"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"eReadParameter"</v>
+              <v n="TextDefault">"Read Parameter"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fWriteAxisParameter"</v>
+              <v n="TextDefault">"Parameter to write"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"fReadAxisParameter"</v>
+              <v n="TextDefault">"Parameter"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bLocalMode"</v>
+              <v n="TextDefault">"Local Mode"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">"bInVelocity"</v>
+              <v n="TextDefault">"Target Velocity reached"</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+            <o>
+              <v n="TextID">""</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" cet="String">
+                <v></v>
+              </l>
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" cet="String">
+            <v>Test</v>
+          </l>
+          <v n="GuidInit">{47e9718f-b349-4193-b7b2-0c179a002340}</v>
+          <v n="GuidReInit">{30110c32-35e2-4c27-a20b-85f04a512871}</v>
+          <v n="GuidExitX">{0f507543-a5bb-4fc0-bd2b-e789c07ed449}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListObject">{2bef0454-1bd3-412a-ac2c-af0f31dbc40f}</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </TextList>
+</TcPlcObject>

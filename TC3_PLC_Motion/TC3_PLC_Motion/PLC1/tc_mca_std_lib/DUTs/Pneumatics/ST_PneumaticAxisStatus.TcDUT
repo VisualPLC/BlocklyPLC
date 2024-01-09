@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_PneumaticAxisStatus" Id="{7869817a-a6d6-4657-92fd-c307a4cba7d6}">
+    <Declaration><![CDATA[TYPE ST_PneumaticAxisStatus :
+STRUCT
+    bExtending: BOOL; //Extending movement status
+    bRetracting: BOOL; //Retraction movement status
+    bExtended: BOOL; //Cylinder extracted status
+    bRetracted: BOOL; //Cylinder retracted status
+    nTimeElapsedExtend: INT; //Elapsed time while extracting cylinder
+    nTimeElapsedRetract: INT; //Elapsed time while retracting cylinder
+    bSolenoidActive: BOOL; //Status input of valve solenoid
+    sStatus: STRING; //Pneumatic cylinder current status
+    bInterlocked: BOOL; //Interlock siganl active
+    bPSSPermitOK: BOOL; //Status of the PSS permit signal
+    bError: BOOL; //Pneumatic axis is in Error state
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_MonitoringAlarm" Id="{7cf4bf56-9560-4e49-afbe-1511a605e206}">
+    <Declaration><![CDATA[
+TYPE ST_MonitoringAlarm :
+STRUCT
+    bAlarmSet: BOOL;
+    bAlarmReset: BOOL;
+    nStatusLED: E_MonitoringLedFunction;
+    nWarningLED: E_MonitoringLedFunction;
+    nEmergencyLED: E_MonitoringLedFunction;
+    nAcknowledgeLED: E_MonitoringLedFunction;
+    nErrorID: INT;
+    sErrorMsg: STRING;
+    bAlarmActive: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

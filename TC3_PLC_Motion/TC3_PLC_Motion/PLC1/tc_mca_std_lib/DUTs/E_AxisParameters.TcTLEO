@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <EnumerationTextList Name="E_AxisParameters" Id="{9199cc42-106a-4663-aaa5-d49855d9aa9f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_AxisParameters :
+(
+//PLCopen specific parameters Index-Group 0x4000 + ID
+    CommandedPosition := 1, //lreal taken from NcToPlc
+    SWLimitForward := 2, //lreal IndexOffset= 16#0001_000E
+    SWLimitBackward := 3, //lreal IndexOffset= 16#0001_000D
+    EnableLimitForward := 4, //bool IndexOffset= 16#0001_000C
+    EnableLimitBackward := 5, //bool IndexOffset= 16#0001_000B
+    EnablePositionLagMonitoring := 6, //bool IndexOffset= 16#0002_0010
+    MaxPositionLag := 7, //lreal IndexOffset= 16#0002_0012
+    AxisMaxVelocity := 8, //lreal IndexOffset= 16#0000_0027
+    ActualVelocity := 10, //lreal taken from NcToPlc
+    CommandedVelocity := 11, //lreal taken from NcToPlc
+    AxisDefaultAcceleration := 12, //lreal IndexOffset= 16#0000_0101
+    AxisDefaultDeceleration := 14, //lreal IndexOffset= 16#0000_0102
+    AxisDefaultJerk := 16, //lreal IndexOffset= 16#0000_0103
+
+//Beckhoff specific parameters Index-Group 0x4000 + ID
+    AxisId := 1000, //lreal IndexOffset= 16#0000_0001
+    AxisManualVelocitySlow := 1001, //lreal IndexOffset= 16#0000_0008
+    AxisManualVelocityFast := 1002, //lreal IndexOffset= 16#0000_0009
+    AxisRapidTraverseVelocity := 1009, //lreal IndexOffset= 16#0000_000A
+    AxisVelocityToCam := 1012, //lreal IndexOffset= 16#0000_0006
+    AxisVelocityFromCam := 1013, //lreal IndexOffset= 16#0000_0007
+    AxisJogIncrementForward := 1014, //lreal IndexOffset= 16#0000_0018
+    AxisJogIncrementBackward := 1015, //lreal IndexOffset= 16#0000_0019
+    MaxPositionLagFilterTime := 1022, //lreal IndexOffset= 16#0002_0013
+    AxisEnPositionRangeMonitoring := 1023, //bool IndexOffset= 16#0000_000F
+    AxisPositionRangeWindow := 1024, //lreal IndexOffset= 16#0000_0010
+    AxisEnTargetPositionMonitoring:= 1025, //bool IndexOffset= 16#0000_0015
+    AxisTargetPositionWindow := 1026, //lreal IndexOffset= 16#0000_0016
+    AxisTargetPositionMonitoringTime := 1027, //lreal IndexOffset= 16#0000_0017
+    AxisEnInTargetTimeout := 1028, //bool IndexOffset= 16#0000_0029
+    AxisInTargetTimeout := 1029, //lreal IndexOffset= 16#0000_002A
+    AxisEnMotionMonitoring := 1030, //bool IndexOffset= 16#0000_0011
+    AxisMotionMonitoringWindow := 1031, //lreal IndexOffset= 16#0000_0028
+    AxisMotionMonitoringTime := 1032, //lreal IndexOffset= 16#0000_0012
+    AxisDelayTimeVeloPosition := 1033, //lreal IndexOffset= 16#0000_0104
+    AxisEnLoopingDistance := 1034, //bool IndexOffset= 16#0000_0013
+    AxisLoopingDistance := 1035, //lreal IndexOffset= 16#0000_0014
+    AxisEnBacklashCompensation := 1036, //bool IndexOffset= 16#0000_002B
+    AxisBacklash := 1037, //lreal IndexOffset= 16#0000_002C
+    AxisEnDataPersistence := 1038, //bool IndexOffset= 16#0000_0030
+    AxisRefVeloOnRefOutput := 1039, //lreal IndexOffset= 16#0003_0101
+    AxisOverrideType := 1040, //lreal IndexOffset= 16#0000_0105
+    //new since 4/2007
+    AxisEncoderOffset := 1042, //lreal IndexOffset= 16#0001_0007
+    AxisEncoderDirectionInverse := 1043, //bool IndexOffset= 16#0001_0008
+    AxisEncoderMask := 1044, //dword IndexOffset= 16#0001_0015
+    AxisEncoderModuloValue := 1045, //lreal IndexOffset= 16#0001_0009
+    AxisModuloToleranceWindow := 1046, //lreal IndexOffset= 16#0001_001B
+    AxisEnablePosCorrection := 1047, //bool IndexOffset= 16#0001_0016
+    AxisPosCorrectionFilterTime := 1048, //lreal IndexOffset= 16#0001_0017
+    //new since 1/2010
+    AxisUnitInterpretation := 1049, //lreal IndexOffset= 16#0000_0026
+    AxisMotorDirectionInverse := 1050, //bool  IndexOffset= 16#0003_0006
+    //new since 1/2011
+    AxisCycleTime := 1051, //lreal IndexOffset= 16#0000_0004
+    //new since 5/2011
+    AxisFastStopSignalType := 1052, //dword IndexOffset= 16#0000_001E
+    AxisFastAcc := 1053, //lreal IndexOffset= 16#0000_010A
+    AxisFastDec := 1054, //lreal IndexOffset= 16#0000_010B
+    AxisFastJerk := 1055, //lreal IndexOffset= 16#0000_010C
+    // new since 1/2012 *)
+    AxisEncoderScalingNumerator := 1056, //lreal IndexOffset= 16#0001_0023 - available in Tc3
+    AxisEncoderScalingDenominator := 1057, //lreal IndexOffset= 16#0001_0024 - available in Tc3
+    (* new since 7/2016 *)
+    AxisMaximumAcceleration := 1058, //lreal IndexOffset= 16#0000_00F1
+    AxisMaximumDeceleration := 1059, //lreal IndexOffset= 16#0000_00F2
+    AxisVeloJumpFactor := 1060, //lreal IndexOffset= 16#0000_0106
+    AxisToleranceBallAuxAxis := 1061, //lreal IndexOffset= 16#0000_0108
+    AxisMaxPositionDeviationAuxAxis := 1062, //lreal IndexOffset= 16#0000_0109
+    AxisErrorPropagationMode := 1063, //dword IndexOffset= 16#0000_001A
+    AxisErrorPropagationDelay := 1064, //lreal IndexOffset= 16#0000_001B
+    AxisCoupleSlaveToActualValues := 1065, //bool IndexOffset= 16#0000_001C
+    AxisAllowMotionCmdToSlaveAxis := 1066, //bool IndexOffset= 16#0000_0020
+    AxisAllowMotionCmdToExtSetAxis := 1067, //bool IndexOffset= 16#0000_0021
+    AxisEncoderSubMask := 1068, //dword IndexOffset= 16#0001_0108
+    AxisEncoderReferenceSystem := 1069, //dword IndexOffset= 16#0001_0019
+    AxisEncoderPositionFilterPT1 := 1070, //lreal IndexOffset= 16#0001_0010
+    AxisEncoderVelocityFilterPT1 := 1071, //lreal IndexOffset= 16#0001_0011
+    AxisEncoderAccelerationFilterPT1 := 1072, //lreal IndexOffset= 16#0001_0012
+    AxisEncoderMode := 1073, //dword IndexOffset= 16#0001_000A
+    AxisEncoderHomingInvDirCamSearch := 1074, //bool IndexOffset= 16#0001_0101
+    AxisEncoderHomingInvDirSyncSearch := 1075, //bool IndexOffset= 16#0001_0102
+    AxisEncoderHomingCalibValue := 1076, //lreal IndexOffset= 16#0001_0103
+    AxisEncoderReferenceMode := 1077, //dword IndexOffset= 16#0001_0107
+    AxisRefVeloOutputRatio := 1078, //lreal IndexOffset= 16#0003_0102
+    AxisDrivePositionOutputScaling := 1079, //lreal IndexOffset= 16#0003_0109
+    AxisDriveVelocityOutputScaling := 1080, //lreal IndexOffset= 16#0003_0105
+    AxisDriveVelocityOutputDelay := 1081, //lreal IndexOffset= 16#0003_010D
+    AxisDriveMinOutputLimitation := 1082, //lreal IndexOffset= 16#0003_000B
+    AxisDriveMaxOutputLimitation := 1083, //lreal IndexOffset= 16#0003_000C
+    AxisTorqueInputScaling := 1084, //lreal IndexOffset= 16#0003_0031 - available in Tc3
+    AxisTorqueInputFilterPT1 := 1085, //lreal IndexOffset= 16#0003_0032 - available in Tc3
+    AxisTorqueDerivationInputFilterPT1 := 1086, //lreal IndexOffset= 16#0003_0033 - available in Tc3
+    AxisTorqueOutputScaling := 1087, //lreal IndexOffset= 16#0003_010B
+    AxisTorqueOutputDelay := 1088, //lreal IndexOffset= 16#0003_010F
+    AxisAccelerationOutputScaling := 1089, //lreal IndexOffset= 16#0003_010A
+    AxisAccelerationOutputDelay := 1090, //lreal IndexOffset= 16#0003_010E
+    AxisDrivePositionOutputSmoothFilterType := 1091, //dword IndexOffset= 16#0003_0110
+    AxisDrivePositionOutputSmoothFilterTime := 1092, //lreal IndexOffset= 16#0003_0111
+    AxisDrivePositionOutputSmoothFilterOrder := 1093, //dword IndexOffset= 16#0003_0112
+    AxisDriveMode := 1094, //dword IndexOffset= 16#0003_000A
+    AxisDriftCompensationOffset := 1095, //lreal IndexOffset= 16#0003_0104
+    AxisPositionControlKv := 1096, //lreal IndexOffset= 16#0002_0102
+    AxisCtrlVelocityPreCtrlWeight := 1097, //lreal IndexOffset= 16#0002_000B
+    AxisControllerMode := 1098, //dword IndexOffset= 16#0002_000A
+    AxisCtrlAutoOffset := 1099, //bool IndexOffset= 16#0002_0110
+    AxisCtrlAutoOffsetTimer := 1100, //lreal IndexOffset= 16#0002_0115
+    AxisCtrlAutoOffsetLimit := 1101, //lreal IndexOffset= 16#0002_0114
+    AxisSlaveCouplingControlKcp := 1102, //lreal IndexOffset= 16#0002_010F
+    AxisCtrlOutputLimit := 1103, //lreal IndexOffset= 16#0002_0100
+
+//Beckhoff specific axis status information - READ ONLY Index-Group 0x4100 + ID
+    AxisTargetPosition := 2000, //lreal IndexOffset= 16#0000_0013
+    AxisRemainingTimeToGo := 2001, //lreal IndexOffset= 16#0000_0014
+    AxisRemainingDistanceToGo := 2002, //lreal IndexOffset= 16#0000_0022, 16#0000_0042
+
+//Beckhoff specific axis functions
+    //read/write gear ratio of a slave
+    AxisGearRatio := 3000, //lreal read: IndexGroup=0x4100+ID, IdxOffset=16#0000_0022,
+                                 //write:IndexGroup=0x4200+ID, IdxOffset=16#0000_0042
+
+//Beckhoff specific other parameters
+    //new since 1/2011
+    NcSafCycleTime := 4000, //lreal IndexOffset= 16#0000_0010
+    NcSvbCycleTime := 4001 //lreal IndexOffset= 16#0000_0012
+
+);
+END_TYPE
+]]></Declaration>
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="TextListEnumerationTextListObject">
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"CommandedPosition"</v>
+              <v n="TextDefault">"1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"SWLimitForward"</v>
+              <v n="TextDefault">"2"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"SWLimitBackward"</v>
+              <v n="TextDefault">"3"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"EnableLimitForward"</v>
+              <v n="TextDefault">"4"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"EnableLimitBackward"</v>
+              <v n="TextDefault">"5"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"EnablePositionLagMonitoring"</v>
+              <v n="TextDefault">"6"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"MaxPositionLag"</v>
+              <v n="TextDefault">"7"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMaxVelocity"</v>
+              <v n="TextDefault">"8"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"ActualVelocity"</v>
+              <v n="TextDefault">"10"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"CommandedVelocity"</v>
+              <v n="TextDefault">"11"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDefaultAcceleration"</v>
+              <v n="TextDefault">"12"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDefaultDeceleration"</v>
+              <v n="TextDefault">"14"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDefaultJerk"</v>
+              <v n="TextDefault">"16"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisId"</v>
+              <v n="TextDefault">"1000"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisManualVelocitySlow"</v>
+              <v n="TextDefault">"1001"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisManualVelocityFast"</v>
+              <v n="TextDefault">"1002"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisRapidTraverseVelocity"</v>
+              <v n="TextDefault">"1009"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisVelocityToCam"</v>
+              <v n="TextDefault">"1012"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisVelocityFromCam"</v>
+              <v n="TextDefault">"1013"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisJogIncrementForward"</v>
+              <v n="TextDefault">"1014"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisJogIncrementBackward"</v>
+              <v n="TextDefault">"1015"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"MaxPositionLagFilterTime"</v>
+              <v n="TextDefault">"1022"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnPositionRangeMonitoring"</v>
+              <v n="TextDefault">"1023"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisPositionRangeWindow"</v>
+              <v n="TextDefault">"1024"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnTargetPositionMonitoring"</v>
+              <v n="TextDefault">"1025"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTargetPositionWindow"</v>
+              <v n="TextDefault">"1026"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTargetPositionMonitoringTime"</v>
+              <v n="TextDefault">"1027"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnInTargetTimeout"</v>
+              <v n="TextDefault">"1028"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisInTargetTimeout"</v>
+              <v n="TextDefault">"1029"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnMotionMonitoring"</v>
+              <v n="TextDefault">"1030"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMotionMonitoringWindow"</v>
+              <v n="TextDefault">"1031"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMotionMonitoringTime"</v>
+              <v n="TextDefault">"1032"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDelayTimeVeloPosition"</v>
+              <v n="TextDefault">"1033"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnLoopingDistance"</v>
+              <v n="TextDefault">"1034"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisLoopingDistance"</v>
+              <v n="TextDefault">"1035"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnBacklashCompensation"</v>
+              <v n="TextDefault">"1036"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisBacklash"</v>
+              <v n="TextDefault">"1037"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnDataPersistence"</v>
+              <v n="TextDefault">"1038"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisRefVeloOnRefOutput"</v>
+              <v n="TextDefault">"1039"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisOverrideType"</v>
+              <v n="TextDefault">"1040"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderOffset"</v>
+              <v n="TextDefault">"1042"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderDirectionInverse"</v>
+              <v n="TextDefault">"1043"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderMask"</v>
+              <v n="TextDefault">"1044"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderModuloValue"</v>
+              <v n="TextDefault">"1045"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisModuloToleranceWindow"</v>
+              <v n="TextDefault">"1046"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEnablePosCorrection"</v>
+              <v n="TextDefault">"1047"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisPosCorrectionFilterTime"</v>
+              <v n="TextDefault">"1048"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisUnitInterpretation"</v>
+              <v n="TextDefault">"1049"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMotorDirectionInverse"</v>
+              <v n="TextDefault">"1050"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCycleTime"</v>
+              <v n="TextDefault">"1051"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisFastStopSignalType"</v>
+              <v n="TextDefault">"1052"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisFastAcc"</v>
+              <v n="TextDefault">"1053"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisFastDec"</v>
+              <v n="TextDefault">"1054"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisFastJerk"</v>
+              <v n="TextDefault">"1055"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderScalingNumerator"</v>
+              <v n="TextDefault">"1056"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderScalingDenominator"</v>
+              <v n="TextDefault">"1057"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMaximumAcceleration"</v>
+              <v n="TextDefault">"1058"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMaximumDeceleration"</v>
+              <v n="TextDefault">"1059"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisVeloJumpFactor"</v>
+              <v n="TextDefault">"1060"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisToleranceBallAuxAxis"</v>
+              <v n="TextDefault">"1061"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisMaxPositionDeviationAuxAxis"</v>
+              <v n="TextDefault">"1062"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisErrorPropagationMode"</v>
+              <v n="TextDefault">"1063"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisErrorPropagationDelay"</v>
+              <v n="TextDefault">"1064"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCoupleSlaveToActualValues"</v>
+              <v n="TextDefault">"1065"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisAllowMotionCmdToSlaveAxis"</v>
+              <v n="TextDefault">"1066"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisAllowMotionCmdToExtSetAxis"</v>
+              <v n="TextDefault">"1067"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderSubMask"</v>
+              <v n="TextDefault">"1068"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderReferenceSystem"</v>
+              <v n="TextDefault">"1069"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderPositionFilterPT1"</v>
+              <v n="TextDefault">"1070"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderVelocityFilterPT1"</v>
+              <v n="TextDefault">"1071"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderAccelerationFilterPT1"</v>
+              <v n="TextDefault">"1072"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderMode"</v>
+              <v n="TextDefault">"1073"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderHomingInvDirCamSearch"</v>
+              <v n="TextDefault">"1074"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderHomingInvDirSyncSearch"</v>
+              <v n="TextDefault">"1075"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderHomingCalibValue"</v>
+              <v n="TextDefault">"1076"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisEncoderReferenceMode"</v>
+              <v n="TextDefault">"1077"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisRefVeloOutputRatio"</v>
+              <v n="TextDefault">"1078"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDrivePositionOutputScaling"</v>
+              <v n="TextDefault">"1079"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriveVelocityOutputScaling"</v>
+              <v n="TextDefault">"1080"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriveVelocityOutputDelay"</v>
+              <v n="TextDefault">"1081"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriveMinOutputLimitation"</v>
+              <v n="TextDefault">"1082"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriveMaxOutputLimitation"</v>
+              <v n="TextDefault">"1083"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTorqueInputScaling"</v>
+              <v n="TextDefault">"1084"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTorqueInputFilterPT1"</v>
+              <v n="TextDefault">"1085"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTorqueDerivationInputFilterPT1"</v>
+              <v n="TextDefault">"1086"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTorqueOutputScaling"</v>
+              <v n="TextDefault">"1087"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTorqueOutputDelay"</v>
+              <v n="TextDefault">"1088"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisAccelerationOutputScaling"</v>
+              <v n="TextDefault">"1089"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisAccelerationOutputDelay"</v>
+              <v n="TextDefault">"1090"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDrivePositionOutputSmoothFilterType"</v>
+              <v n="TextDefault">"1091"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDrivePositionOutputSmoothFilterTime"</v>
+              <v n="TextDefault">"1092"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDrivePositionOutputSmoothFilterOrder"</v>
+              <v n="TextDefault">"1093"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriveMode"</v>
+              <v n="TextDefault">"1094"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisDriftCompensationOffset"</v>
+              <v n="TextDefault">"1095"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisPositionControlKv"</v>
+              <v n="TextDefault">"1096"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCtrlVelocityPreCtrlWeight"</v>
+              <v n="TextDefault">"1097"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisControllerMode"</v>
+              <v n="TextDefault">"1098"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCtrlAutoOffset"</v>
+              <v n="TextDefault">"1099"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCtrlAutoOffsetTimer"</v>
+              <v n="TextDefault">"1100"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCtrlAutoOffsetLimit"</v>
+              <v n="TextDefault">"1101"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisSlaveCouplingControlKcp"</v>
+              <v n="TextDefault">"1102"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisCtrlOutputLimit"</v>
+              <v n="TextDefault">"1103"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisTargetPosition"</v>
+              <v n="TextDefault">"2000"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisRemainingTimeToGo"</v>
+              <v n="TextDefault">"2001"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisRemainingDistanceToGo"</v>
+              <v n="TextDefault">"2002"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"AxisGearRatio"</v>
+              <v n="TextDefault">"3000"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"NcSafCycleTime"</v>
+              <v n="TextDefault">"4000"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"NcSvbCycleTime"</v>
+              <v n="TextDefault">"4001"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">""</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{4114fc12-4c95-44a4-85c9-ca45e3e7cf10}</v>
+          <v n="GuidReInit">{43ed19a8-c232-429d-a96e-0d53450f7f38}</v>
+          <v n="GuidExitX">{974ea1c2-1f72-4556-badc-f4c7920798a7}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListEnumerationTextListObject">{4b60233c-f940-4beb-b331-82133b520151}</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </EnumerationTextList>
+</TcPlcObject>

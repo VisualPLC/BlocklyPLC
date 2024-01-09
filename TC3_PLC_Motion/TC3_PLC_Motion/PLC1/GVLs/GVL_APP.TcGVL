@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_APP" Id="{b50aa985-fba8-46c3-bb86-9b5e0a9bc40d}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+END_VAR
+
+VAR_GLOBAL CONSTANT
+    nAXIS_NUM: UINT := 4;
+	nPNEUMATIC_AXIS_NUM:  UINT := 2;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

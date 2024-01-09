@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{913e21aa-a47e-444c-bfce-679b16c0434b}">
+    <Declaration><![CDATA[VAR_GLOBAL
+    // Semantic version in machine-readable format.
+    // Update it and commit it immediatly before setting a tag
+    nVersionMajor: UINT := 2; // Major Version
+    nVersionMinor: UINT := 2; // Minor Version
+    nVersionPatch: UINT := 0; // Patch level
+    astAxes: ARRAY [1..GVL_APP.nAXIS_NUM] OF ST_AxisStruct; //Array of ST_AxisStruct for holding axis parameters and controls
+    astPneumaticAxes: ARRAY [1..GVL_APP.nPNEUMATIC_AXIS_NUM] OF ST_PneumaticAxisStruct; //Array of ST_PneumaticAxisStruct for holding pneumatic axis parameters and controls
+    iAxis: UINT; //Index for for loops while going through axes
+    iPneumaticAxis: UINT := 1; //Index for for loops while going through pneumatic axes
+    fbGetCurTaskIndex: GETCURTASKINDEX;
+    bLocalMode: BOOL;
+END_VAR
+
+VAR_GLOBAL CONSTANT
+    nMAX_AXIS_NAME: UINT := 32;
+END_VAR
+
+VAR_GLOBAL PERSISTENT
+    astAxesPersistent: ARRAY [1..GVL_APP.nAXIS_NUM] OF ST_AxisPersistent;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

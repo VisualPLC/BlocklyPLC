@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_AxisDescription" Id="{50ff6038-4325-4846-892a-422b31e6a32f}">
+    <Declaration><![CDATA[TYPE ST_AxisDescription :
+STRUCT
+    sAxisName : STRING(nMAX_AXIS_NAME);
+    eUnit: E_AxisEngUnit; //Code for the axis base unit (like m or degree)
+    nPrefix: INT; //Exponent defining unit prefix, e.g. 3 for k(kilo)
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

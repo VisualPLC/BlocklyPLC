@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_AxisEngUnit" Id="{86fad565-7f5d-4d36-a586-918ff2ec70f5}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_AxisEngUnit :
+(
+    eMeter := 0,
+    eDegree := 1
+) := eMeter;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

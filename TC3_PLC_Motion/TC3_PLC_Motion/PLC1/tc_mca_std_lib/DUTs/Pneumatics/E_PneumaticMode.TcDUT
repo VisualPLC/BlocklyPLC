@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_PneumaticMode" Id="{767ff514-f7ef-4e71-a359-d55b64a86d25}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_PneumaticMode :
+(   eSingleSolenoidControl := 0, //Single solenoid valve with spring return
+    eReset := 1,
+    eError := 2
+):= eSingleSolenoidControl;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

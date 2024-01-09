@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_AxisStatus" Id="{9d7cecb1-beaf-45c1-90df-46de240bc048}">
+    <Declaration><![CDATA[TYPE ST_AxisStatus :
+STRUCT
+    //Outputs & Status
+    bAxisInitialized: BOOL := FALSE; //True when all parameters from actReadMcParameters are valid
+    bEnabled: BOOL; //Axis drive enabled
+    bCommandAborted: BOOL; //Command aborted output of the eCommand function blocks
+    bBusy: BOOL; //Axis busy (eCommand function block is active)
+    bDone: BOOL; //Last eCommand function block executed successfully;
+    //bDone will also be set with the InGear and InVelocity outputs
+    //When InVelocity is set, fbMoveVelocity is still acitve, which is reflected by the bBusy status
+    bInVelocity: BOOL; //MC_MoveVelocity has reached target velocity; will stay true until the movement stops
+    bHomed: BOOL; //Axis homed
+    bMoving: BOOL; //Moving state from the NC
+    bMovingForward: BOOL; //Moving forward indicator from NC
+    bMovingBackward: BOOL; //Moving backward indicator from NC
+    bInTargetPosition: BOOL; //In target position bit from AxisStatus()
+    bFwEnabled: BOOL; //Positive movement of axis is enabled/disabled
+    bBwEnabled: BOOL; //Negative movement of axis is enabled/disabled
+    bInterlockedFwd: BOOL; //Axis interlocked in the postive direction
+    bInterlockedBwd: BOOL; //Axis interlocked in the negative direction
+    bGeared: BOOL; //Axis is an active slave
+    bCoupledGear1: BOOL;
+    bCoupledGear2: BOOL;
+    bCoupledGear3: BOOL;
+    bCoupledGear4: BOOL;
+    fActPosition: LREAL; //Actual position value
+    fActTemperature: LREAL; //Actual Temperature
+    bHighTempAxisDisabled: BOOL := FALSE; //Bit for disabling the axis when temperature too high
+    nEncoderRawCounter AT %I*: UDINT; //Raw encoder counter value
+    nStepperDriveCounter AT %I*: UDINT; //Raw internal counter from stepper drive
+    fActVelocity: LREAL; //Actual velocity
+    bError: BOOL; //Motion function block has produced error (NC drive not necessarily in error state)
+    nErrorID: UDINT; //Last motion function block errorID or NC errorID
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

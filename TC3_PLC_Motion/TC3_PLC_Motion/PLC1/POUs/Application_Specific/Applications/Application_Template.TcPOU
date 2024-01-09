@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Application_Template" Id="{4bdeebc0-15d8-4790-97d0-e9c4239d121c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Application_Template
+VAR
+    //Define all necessary variables for your application
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Program any specific code or safety code for an specific application when it involves multiple axes
+//Eg. Collision avoidance, interlocks, sequencing, etc.
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_SlitPairStatesV2" Id="{6665fbaf-b520-47d5-8ce7-9872d8af20f7}">
+    <Declaration><![CDATA[
+{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_SlitPairStatesV2 :
+(
+    eInit := 0,
+    eEnableRealGenerators,
+    eDisableRealGenerators,
+    eEnableVirtualGenerators,
+    eDisableVirtualGenerators,
+    eWaitForVirtualMoveDone,
+    eWaitForRealMoveDone,
+    eError,
+    eOperational,
+    eWaitForVirtualHomed,
+    eWaitForRealHomed,
+    eCheckRealAxisGeneratorsEnabled,
+    eCheckVirtualAxisGeneratorsEnabled
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

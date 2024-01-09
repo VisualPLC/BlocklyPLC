@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <EnumerationTextList Name="E_HomingRoutines" Id="{80602f9f-a7d4-4c82-a41f-735a98acfb74}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_HomingRoutines :
+(
+    eNoHoming := 0,
+
+    //0X: LIMIT Switch
+    //Home to bBwdLimit, record position on first approach
+    eHomeToLimit_Bwd := 1,
+    //Home to bFwdLimit, record position on first approach
+    eHomeToLimit_Fwd := 2,
+    //Find bBwdLimit (using towardsCam speed), then reverse direction looking FOR falling edge (using fromCam speed)
+    //eHomeToLimit_Bwd_2Speeds := 3,
+    //Find bFwdLimit (using towardsCam speed), then reverse direction looking for falling edge (using fromCam speed)
+    //eHomeToLimit_Fwd_2Speeds := 4,
+
+    //1X: Home Sensor
+    //Home to bHome in Bwd direction (will reverse direction if limit hit), record position on first approach
+    eHomeToRef_Bwd := 11,
+    //Home to bHome in Fwd direction (will reverse direction if limit hit), record position on first approach
+    eHomeToRef_Fwd := 12,
+    //Find bHome in Bwd direction (using towardsCam speed) then reverse direction looking for falling edge (using fromCam speed), will reverse direction if limit hit
+    //eHomeToRef_Bwd_2Speeds := 13,
+    //Find bHome in Fwd direction (using towardsCam speed) then reverse direction looking for falling edge (using fromCam speed), will reverse direction if limit hit
+    //eHomeToRef_Fwd_2Speeds := 14,
+
+    //2X: Enc Pulse
+    //Home to EncRefPulse in Bwd direction (used for single turn rotary axis without limit switches)
+    eHomeToEncPulse_Bwd := 21,
+    //Home to EncRefPulse in Fwd direction (used for single turn rotary axis without limit switches)
+    eHomeToEncPulse_Fwd := 22,
+    //Home to EncRefPulse via bBwdLimit (using towardsCam speed), then reverse direction looking for falling edge on ref pulse (using fromCam speed)
+    eHomeToEncPulse_viaBwdLimit := 23,
+    //Home to EncRefPulse via bFwdLimit (using towardsCam speed), then reverse direction looking for falling edge on ref pulse (using fromCam speed)
+    eHomeToEncPulse_viaFwdLimit := 24,
+
+    //3X: Home To Mechanical Block (Lag based StepBlockDetection)
+    //Home towards a mechanical block in Bwd direction
+    eHomeToBlock_Bwd := 30,
+    //Home towards a mechanical block in Fwd direction
+    eHomeToBlock_Fwd := 31,
+
+    //9X: Software
+    eHomeDirect := 90 //Set position directly to fHomePosition
+) := eHomeDirect;
+END_TYPE
+]]></Declaration>
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="TextListEnumerationTextListObject">
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"eNoHoming"</v>
+              <v n="TextDefault">"0"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToLimit_Bwd"</v>
+              <v n="TextDefault">"1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToLimit_Fwd"</v>
+              <v n="TextDefault">"2"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToRef_Bwd"</v>
+              <v n="TextDefault">"11"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToRef_Fwd"</v>
+              <v n="TextDefault">"12"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_Bwd"</v>
+              <v n="TextDefault">"21"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_Fwd"</v>
+              <v n="TextDefault">"22"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_viaBwdLimit"</v>
+              <v n="TextDefault">"23"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToEncPulse_viaFwdLimit"</v>
+              <v n="TextDefault">"24"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToBlock_Bwd"</v>
+              <v n="TextDefault">"30"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeToBlock_Fwd"</v>
+              <v n="TextDefault">"31"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"eHomeDirect"</v>
+              <v n="TextDefault">"90"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">""</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{8b43949f-7b13-4dd5-952f-b0ef8422789a}</v>
+          <v n="GuidReInit">{8d178625-23ea-466a-8a65-65226f999dac}</v>
+          <v n="GuidExitX">{64392d93-7823-49d3-a6d0-7c6c0c5c0897}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListEnumerationTextListObject">{4b60233c-f940-4beb-b331-82133b520151}</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </EnumerationTextList>
+</TcPlcObject>

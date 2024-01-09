@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="ST_AxisConfig" Id="{e00fe310-8ff8-452a-800a-823efa83b1a3}">
+    <Declaration><![CDATA[(*These are axis parameters that are set up during commissioning and
+in theory don't neeed to be change as part of daily moving of axes.
+For instance they may be changed due to poor parameter selection
+or change of instrument configuration.*)
+TYPE ST_AxisConfig :
+STRUCT
+    //Axis Parameters
+    fOverride: LREAL := 100; //Controller override %, used a global scale for an axis in terms of velocity. Generally set to 100%.
+    fHomePosition: LREAL := 0; //The position that the axis should be set to once homing is completed
+    fHomeFinishDistance: LREAL := 0; //Distrance that the axis should move back into the working zone after homing is finished
+    eHomeSeq: E_HomingRoutines; //Homing sequence to perform
+    eRestorePosition: E_RestorePosition; //Restore position of incremental axis after loss of power to the CPU, 0=don't restore, 1=restore but don't home
+
+    //Advanced homing parameters
+    stHomingConfig: ST_HomingConfig; //Structure containing the advanced homing parameters
+
+    //Temperature disable configuration
+    bEnableTemperatureDisable: BOOL := FALSE; //Enable disabling axis because of high temperature
+    fMaxTemperature: LREAL := 0.0;
+    fTempScalingFactor: REAL := 10.0;
+
+    //Read and Write parameters
+    eAxisParameters: E_AxisParameters; //Enumeration of axis parameters
+    fWriteAxisParameter: LREAL; //The value to be writen to eAxisParameterNumber
+    fReadAxisParameter: LREAL; //Read the current value of the selected eAxisParameterNumber
+
+    //Multi master axis parameters
+    astMultiMasterAxis: ARRAY [1..4] OF ST_GearAxis;
+    astMultiMasterAxisLatched: ARRAY [1..4] OF ST_GearAxis; //A kind of readback since one doesn't exist in AXIS_REF
+    afMultiSlaveAxisRatio: ARRAY [1..GVL_APP.nAXIS_NUM] OF LREAL;
+
+    // Read only MC parameters
+    bReadMcParametersValid: BOOL:= FALSE;
+    bReadMcParametersError: BOOL:= FALSE;
+    fVelocityDefaultSlow: LREAL; //Read only - AxisVeloManSlow
+    fVelocityDefaultFast: LREAL; //Read only - AxisVeloManFast
+    fHomingVelToCam: LREAL; //Read only - AxisCalibrationVelocityForward
+    fHomingVelFromCam: LREAL; //Read only - AxisCalibrationVelocityBackward
+    fVeloMax: LREAL; //Read only - AxisMaxVelocity
+    fMaxAcc: LREAL; //Read only - AxisMaximumAcceleration
+    fMaxDec: LREAL; //Read only - AxisMaxDeceleration
+    fDefaultAcc: LREAL; //Read only - AxisDefaultAcceleration
+    fDefaultDec: LREAL; //Read only - AxisDefaultDeceleration
+    bEnMinSoftPosLimit: BOOL; //Read only
+    fMinSoftPosLimit: LREAL; //Read only
+    bEnMaxSoftPosLimit: BOOL; //Read only
+    fMaxSoftPosLimit: LREAL; //Read only
+    bEnPositionLagMonitoring: BOOL; //Read only
+    fMaxPosLagValue: LREAL; //Read only
+    bEnTargetPositionMonitoring: BOOL; //Read only
+    fTargetPositionWindow: LREAL; //Read only
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

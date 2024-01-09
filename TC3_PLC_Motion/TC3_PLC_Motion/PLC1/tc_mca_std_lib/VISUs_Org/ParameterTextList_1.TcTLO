@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <TextList Name="ParameterTextList_1" Id="{83969f24-fa14-4456-a640-4c8b0b70bc4a}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="TextListObject">
+          <v n="UniqueIdGenerator">"0"</v>
+          <l n="TextList" t="ArrayList" cet="TextListRow">
+            <o>
+              <v n="TextID">"1"</v>
+              <v n="TextDefault">"CommandedPosition"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2"</v>
+              <v n="TextDefault">"SWLimitForward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"3"</v>
+              <v n="TextDefault">"SWLimitBackward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"4"</v>
+              <v n="TextDefault">"EnableLimitForward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"5"</v>
+              <v n="TextDefault">"EnableLimitBackward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"6"</v>
+              <v n="TextDefault">"EnablePositionLagMonitoring"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"7"</v>
+              <v n="TextDefault">"MaxPositionLag"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"8"</v>
+              <v n="TextDefault">"AxisMaxVelocity"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"10"</v>
+              <v n="TextDefault">"ActualVelocity"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"11"</v>
+              <v n="TextDefault">"CommandedVelocity"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"12"</v>
+              <v n="TextDefault">"AxisDefaultAcceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"14"</v>
+              <v n="TextDefault">"AxisDefaultDeceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"16"</v>
+              <v n="TextDefault">"AxisDefaultJerk"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1000"</v>
+              <v n="TextDefault">"AxisId"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1001"</v>
+              <v n="TextDefault">"AxisManualVelocitySlow"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1002"</v>
+              <v n="TextDefault">"AxisManualVelocityFast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1009"</v>
+              <v n="TextDefault">"AxisRapidTraverseVelocity"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1012"</v>
+              <v n="TextDefault">"AxisVelocityToCam"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1013"</v>
+              <v n="TextDefault">"AxisVelocityFromCam"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1014"</v>
+              <v n="TextDefault">"AxisJogIncrementForward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1015"</v>
+              <v n="TextDefault">"AxisJogIncrementBackward"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1022"</v>
+              <v n="TextDefault">"MaxPositionLagFilterTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1023"</v>
+              <v n="TextDefault">"AxisEnPositionRangeMonitoring"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1024"</v>
+              <v n="TextDefault">"AxisPositionRangeWindow"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1025"</v>
+              <v n="TextDefault">"AxisEnTargetPositionMonitoring"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1026"</v>
+              <v n="TextDefault">"AxisTargetPositionWindow"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1027"</v>
+              <v n="TextDefault">"AxisTargetPositionMonitoringTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1028"</v>
+              <v n="TextDefault">"AxisEnInTargetTimeout"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1029"</v>
+              <v n="TextDefault">"AxisInTargetTimeout"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1030"</v>
+              <v n="TextDefault">"AxisEnMotionMonitoring"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1031"</v>
+              <v n="TextDefault">"AxisMotionMonitoringWindow"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1032"</v>
+              <v n="TextDefault">"AxisMotionMonitoringTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1033"</v>
+              <v n="TextDefault">"AxisDelayTimeVeloPosition"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1034"</v>
+              <v n="TextDefault">"AxisEnLoopingDistance"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1035"</v>
+              <v n="TextDefault">"AxisLoopingDistance"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1038"</v>
+              <v n="TextDefault">"AxisEnDataPersistence"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1039"</v>
+              <v n="TextDefault">"AxisRefVeloOnRefOutput"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1040"</v>
+              <v n="TextDefault">"AxisOverrideType"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1042"</v>
+              <v n="TextDefault">"AxisEncoderOffset"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1043"</v>
+              <v n="TextDefault">"AxisEncoderDirectionInverse"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1044"</v>
+              <v n="TextDefault">"AxisEncoderMask"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1045"</v>
+              <v n="TextDefault">"AxisEncoderModuloValue"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1046"</v>
+              <v n="TextDefault">"AxisModuloToleranceWindow"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1047"</v>
+              <v n="TextDefault">"AxisEnablePosCorrection"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1048"</v>
+              <v n="TextDefault">"AxisPosCorrectionFilterTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1049"</v>
+              <v n="TextDefault">"AxisUnitInterpretation"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1050"</v>
+              <v n="TextDefault">"AxisMotorDirectionInverse"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1051"</v>
+              <v n="TextDefault">"AxisCycleTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1052"</v>
+              <v n="TextDefault">"AxisFastStopSignalType"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1053"</v>
+              <v n="TextDefault">"AxisFastAcc"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1054"</v>
+              <v n="TextDefault">"AxisFastDec"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1055"</v>
+              <v n="TextDefault">"AxisFastJerk"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1056"</v>
+              <v n="TextDefault">"AxisEncoderScalingNumerator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1057"</v>
+              <v n="TextDefault">"AxisEncoderScalingDenominator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1058"</v>
+              <v n="TextDefault">"AxisMaximumAcceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1059"</v>
+              <v n="TextDefault">"AxisMaximumDeceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1060"</v>
+              <v n="TextDefault">"AxisVeloJumpFactor"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1061"</v>
+              <v n="TextDefault">"AxisToleranceBallAuxAxis"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1062"</v>
+              <v n="TextDefault">"AxisMaxPositionDeviationAuxAxis"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1063"</v>
+              <v n="TextDefault">"AxisErrorPropagationMode"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1064"</v>
+              <v n="TextDefault">"AxisErrorPropagationDelay"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1065"</v>
+              <v n="TextDefault">"AxisCoupleSlaveToActualValues"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1066"</v>
+              <v n="TextDefault">"AxisAllowMotionCmdToSlaveAxis"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1067"</v>
+              <v n="TextDefault">"AxisAllowMotionCmdToExtSetAxis"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1068"</v>
+              <v n="TextDefault">"AxisEncoderSubMask"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1069"</v>
+              <v n="TextDefault">"AxisEncoderReferenceSystem"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1070"</v>
+              <v n="TextDefault">"AxisEncoderPositionFilterPT1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1071"</v>
+              <v n="TextDefault">"AxisEncoderVelocityFilterPT1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1072"</v>
+              <v n="TextDefault">"AxisEncoderAccelerationFilterPT1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1073"</v>
+              <v n="TextDefault">"AxisEncoderMode"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1074"</v>
+              <v n="TextDefault">"AxisEncoderHomingInvDirCamSearch"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1075"</v>
+              <v n="TextDefault">"AxisEncoderHomingInvDirSyncSearch"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1076"</v>
+              <v n="TextDefault">"AxisEncoderHomingCalibValue"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1077"</v>
+              <v n="TextDefault">"AxisEncoderReferenceMode"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1078"</v>
+              <v n="TextDefault">"AxisRefVeloOutputRatio"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1079"</v>
+              <v n="TextDefault">"AxisDrivePositionOutputScaling"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1080"</v>
+              <v n="TextDefault">"AxisDriveVelocityOutputScaling"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1081"</v>
+              <v n="TextDefault">"AxisDriveVelocityOutputDelay"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1082"</v>
+              <v n="TextDefault">"AxisDriveMinOutputLimitation"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1083"</v>
+              <v n="TextDefault">"AxisDriveMaxOutputLimitation"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1084"</v>
+              <v n="TextDefault">"AxisTorqueInputScaling"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1085"</v>
+              <v n="TextDefault">"AxisTorqueInputFilterPT1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1086"</v>
+              <v n="TextDefault">"AxisTorqueDerivationInputFilterPT1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1087"</v>
+              <v n="TextDefault">"AxisTorqueOutputScaling"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1088"</v>
+              <v n="TextDefault">"AxisTorqueOutputDelay"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1089"</v>
+              <v n="TextDefault">"AxisAccelerationOutputScaling"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1090"</v>
+              <v n="TextDefault">"AxisAccelerationOutputDelay"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1091"</v>
+              <v n="TextDefault">"AxisDrivePositionOutputSmoothFilterType"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1092"</v>
+              <v n="TextDefault">"AxisDrivePositionOutputSmoothFilterTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1093"</v>
+              <v n="TextDefault">"AxisDrivePositionOutputSmoothFilterOrder"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1094"</v>
+              <v n="TextDefault">"AxisDriveMode"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1095"</v>
+              <v n="TextDefault">"AxisDriftCompensationOffset"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1096"</v>
+              <v n="TextDefault">"AxisPositionControlKv"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1097"</v>
+              <v n="TextDefault">"AxisCtrlVelocityPreCtrlWeight"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1098"</v>
+              <v n="TextDefault">"AxisControllerMode"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1099"</v>
+              <v n="TextDefault">"AxisCtrlAutoOffset"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1100"</v>
+              <v n="TextDefault">"AxisCtrlAutoOffsetTimer"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1101"</v>
+              <v n="TextDefault">"AxisCtrlAutoOffsetLimit"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1102"</v>
+              <v n="TextDefault">"AxisSlaveCouplingControlKcp"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1103"</v>
+              <v n="TextDefault">"AxisCtrlOutputLimit"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2000"</v>
+              <v n="TextDefault">"AxisTargetPosition"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2001"</v>
+              <v n="TextDefault">"AxisRemainingTimeToGo"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"2002"</v>
+              <v n="TextDefault">"AxisRemainingDistanceToGo"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"3000"</v>
+              <v n="TextDefault">"AxisGearRatio"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"4000"</v>
+              <v n="TextDefault">"NcSafCycleTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"4001"</v>
+              <v n="TextDefault">"NcSvbCycleTime"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">""</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+          </l>
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{6b877302-5f27-47c4-abd6-82b35758d945}</v>
+          <v n="GuidReInit">{c8305fcf-4c2b-4cb0-a845-c1ffd907d98b}</v>
+          <v n="GuidExitX">{0e537c7b-5750-4ed8-92ee-5623fac727a0}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="String">System.String</Type>
+        <Type n="TextListObject">{2bef0454-1bd3-412a-ac2c-af0f31dbc40f}</Type>
+        <Type n="TextListRow">{53da1be7-ad25-47c3-b0e8-e26286dad2e0}</Type>
+      </TypeList>
+    </XmlArchive>
+  </TextList>
+</TcPlcObject>

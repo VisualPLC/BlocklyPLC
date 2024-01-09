@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_RestorePosition" Id="{74fe66e5-f3db-4a55-9501-11365c4561a4}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_RestorePosition :
+(
+    eDontRestore :=0,
+    eRestoreWithoutHome := 1 //Redefined the position of the axis to that when the power was lost
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

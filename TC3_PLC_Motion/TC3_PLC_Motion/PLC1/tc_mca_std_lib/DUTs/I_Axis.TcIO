@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="I_Axis" Id="{aa3f26f1-e1dd-43e1-ad72-924a566d91d1}">
+    <Declaration><![CDATA[INTERFACE I_Axis
+]]></Declaration>
+    <Method Name="EndOfCycle" Id="{1e7d03ee-b03d-4e24-bc82-27dce521a52e}">
+      <Declaration><![CDATA[METHOD EndOfCycle : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="Run" Id="{7e3148d5-8f02-43cd-bfcb-03545931b5e8}">
+      <Declaration><![CDATA[METHOD Run : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Property Name="stAxis" Id="{c7710a62-b9e1-478e-bbd1-1fb2fb0a2fc5}">
+      <Declaration><![CDATA[PROPERTY stAxis : REFERENCE TO ST_AxisStruct
+]]></Declaration>
+      <Get Name="Get" Id="{86849ae3-b1b2-4c86-b3ef-f5c9ef8278d9}">
+        <Declaration><![CDATA[
+
+]]></Declaration>
+      </Get>
+      <Set Name="Set" Id="{cddb2d57-7d29-4e35-beef-82c9ff08c26e}">
+        <Declaration><![CDATA[
+
+]]></Declaration>
+      </Set>
+    </Property>
+  </Itf>
+</TcPlcObject>
