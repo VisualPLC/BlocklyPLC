@@ -84,6 +84,10 @@
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
 
+> ### $\textcolor{yellow}{Projects Beckhoff TwinCAT\ Hub:}$
+> - [x] add project : - TC3_BlocklyPLC - Beckhoff TwinCAT without PLC direct port 301 with task.
+> - [x] add project : - TC3_PLC_Motion - Beckhoff twinCAt with PLC with motion PLCOpen.
+
 > ### $\textcolor{yellow}{Docker\ Hub:}$
 > - [ ] first version Docker image.
 > - [ ] Git actions create Docker Hub.
