@@ -48,6 +48,8 @@
 > - [ ] database sqlite import register programm or all programs
 
 > - [ ] Blockly add MQTT
+>   - [] Blockly publish varios topics
+>   - [] Blockly subscribe various topics and view logger winston
 >      - https://github.com/runtimevic/mqtt-node
 >      - https://github.com/runtimevic/mqtt-custom-dashboard-node-js
 >      - https://github.com/Gr4vity4/mqttws31
