@@ -48,8 +48,8 @@
 > - [ ] database sqlite import register programm or all programs
 
 > - [ ] Blockly add MQTT
->   - [ ] Blockly publish varios topics
->   - [ ] Blockly subscribe various topics and view logger winston
+>   - [ ] Blockly publish various topics.
+>   - [ ] Blockly subscribe various topics and view logger winston.
 >      - https://github.com/runtimevic/mqtt-node
 >      - https://github.com/runtimevic/mqtt-custom-dashboard-node-js
 >      - https://github.com/Gr4vity4/mqttws31
@@ -81,7 +81,7 @@
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
-> - [ ] Be able to observe the server log on the frontend or Logview file
+> - [ ] Be able to observe the server log on the frontend or Logview file, winston, etc..
 > - [x] Database sqlite diferents programm, edit, create,delete.
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
