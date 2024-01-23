@@ -30,7 +30,7 @@
 ***
 > [!WARNING]  
 > first version:
-
+***
 > ### $\textcolor{yellow}{Backend:}$
 > - [ ] add Block WaitUntil, idea Robot ABB Rapid..., see manual Rapid
 >      - WaitUntil \inpos, b_GripperClosed = TRUE;
@@ -89,11 +89,11 @@
 > - [x] Database sqlite diferents programm, edit, create,delete.
 > - [x] toolbox add icons center, zoom+. zoom--
 >      - https://developers.google.com/blockly/guides/configure/web/zoom?hl=es-419 
-
+***
 > ### $\textcolor{yellow}{Projects\ Beckhoff\ TwinCAT:}$
 > - [x] add project : TC3_BlocklyPLC : Beckhoff TwinCAT without PLC direct port 301 with task.
 > - [x] add project : TC3_PLC_Motion : Beckhoff TwinCAT with PLC with motion PLCOpen.
-
+***
 > ### $\textcolor{yellow}{Docker\ Hub:}$
 > - [ ] first version Docker image.
 > - [ ] Git actions create Docker Hub.
