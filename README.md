@@ -75,8 +75,8 @@
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
 > - [x] TwinCAT connect port: 301 without PLC runtime, direct I/O
 >      - add parameter bareClient: true/false. By providing bareClient setting, the client connects to the router or target and nothing else. After that, the client can be used to read/write data. However, connection losses etc. need to be handled by the user.
-> - [x] Be able to observe the server log on the frontend or Logview file, winston, etc..
-        - https://github.com/winstonjs/winston
+> - [x] Be able to observe the server log on the frontend or Logview file, [**winston**](https://github.com/winstonjs/winston), etc..
+
 ***
 > ### $\textcolor{yellow}{Frontend:}$
 > - [ ] TwinCAT connnect parameters change names, targetAmsNetId and targetAdsPort
