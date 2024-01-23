@@ -37,6 +37,8 @@
 >      - WaitUntil \inpos, diGripperClosed = 1;
 >      - https://library.e.abb.com/public/688894b98123f87bc1257cc50044e809/Technical%20reference%20manual_RAPID_3HAC16581-1_revJ_en.pdf
 >      - https://search.abb.com/library/Download.aspx?DocumentID=3HAC050917-005&LanguageCode=es&DocumentPartId=&Action=Launch
+> - [ ] add TwinCAT RPC "remote procedure call"
+> - [ ] add OPC UA Client...
 > - [ ] TwinCAT check port 300 IO=ADS device description
 > - [ ] operating problem I had to add a 1 sec wait time block after the Beckhoff TwinCAT PLC connect block
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
@@ -48,7 +50,7 @@
 > - [ ] database sqlite import register programm or all programs
 
 > - [ ] Blockly add MQTT
->   - [ ] Blockly publish various topics.
+>   - [x] Blockly publish various topics.
 >   - [ ] Blockly subscribe various topics and view logger winston.
 >      - https://github.com/runtimevic/mqtt-node
 >      - https://github.com/runtimevic/mqtt-custom-dashboard-node-js
@@ -73,6 +75,7 @@
 > - [x] add Block connect PLC Beckhoff TwinCAT, problem add block after block time 1seg.
 > - [x] TwinCAT connect port: 301 without PLC runtime, direct I/O
 >      - add parameter bareClient: true/false. By providing bareClient setting, the client connects to the router or target and nothing else. After that, the client can be used to read/write data. However, connection losses etc. need to be handled by the user.
+> - [x] Be able to observe the server log on the frontend or Logview file, winston, etc..
 
 > ### $\textcolor{yellow}{Frontend:}$
 > - [ ] TwinCAT connnect parameters change names, targetAmsNetId and targetAdsPort
