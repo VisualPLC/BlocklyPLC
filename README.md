@@ -85,7 +85,7 @@
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
-> - [ ] document REST API with [Swagger](https://swagger.io/docs/)
+> - [ ] document REST API with [**Swagger**](https://swagger.io/docs/)
 > - [ ] Be able to observe the server log on the frontend or Logview file, winston, etc..
 > - [x] Database sqlite diferents programm, edit, create,delete.
 > - [x] toolbox add icons center, zoom+. zoom--
