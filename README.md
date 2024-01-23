@@ -44,7 +44,7 @@
 > - [ ] add Block read variable type string PLC, and logic_compare two strings.
 > - [ ] add Block read variable type float PLC, and logic_compare two float.
 
-> - [ ] Document endpoints swagger
+> - [ ] document REST API enpoints with [**Swagger**](https://swagger.io/docs/)
 
 > - [ ] database sqlite export register programm or all programs
 > - [ ] database sqlite import register programm or all programs
@@ -85,7 +85,7 @@
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
-> - [ ] document REST API with [**Swagger**](https://swagger.io/docs/)
+> - [ ] document REST API endpoints with [**Swagger**](https://swagger.io/docs/)
 > - [ ] Be able to observe the server log on the frontend or Logview file, winston, etc..
 > - [x] Database sqlite diferents programm, edit, create,delete.
 > - [x] toolbox add icons center, zoom+. zoom--
