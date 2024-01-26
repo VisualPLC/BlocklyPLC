@@ -76,7 +76,7 @@
 > - [x] TwinCAT connect port: 301 without PLC runtime, direct I/O
 >      - add parameter bareClient: true/false. By providing bareClient setting, the client connects to the router or target and nothing else. After that, the client can be used to read/write data. However, connection losses etc. need to be handled by the user.
 > - [x] Be able to observe the server log on the Backend or Logview file, [**winston**](https://github.com/winstonjs/winston), etc..
->       - https://codesandbox.io/p/sandbox/winston-logger-react-327cx?file=%2Fsrc%2Flogger.js%3A14%2C16
+>      - https://codesandbox.io/p/sandbox/winston-logger-react-327cx?file=%2Fsrc%2Flogger.js%3A14%2C16
 
 ***
 > ### $\textcolor{yellow}{Frontend:}$
