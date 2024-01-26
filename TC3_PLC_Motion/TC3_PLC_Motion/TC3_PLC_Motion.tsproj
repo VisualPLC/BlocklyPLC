@@ -1430,7 +1430,7 @@ External Setpoint Generation:
 				<Cpu CpuId="6"/>
 			</Settings>
 			<Tasks>
-				<Task Id="5" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+				<Task Id="5" CreateSymbols="true" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
