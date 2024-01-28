@@ -85,7 +85,7 @@
 > - [ ] toolbar customize: divide lightBlocks and PLCTwinCATBlocks.
 > - [ ] button export register programm or all programs database sqlite
 > - [ ] button import register programm or all programs database sqlite
-> - [ ] Select different themes...
+> - [ ] Select different themes, 6 possible themes...
 >      - https://github.com/google/blockly-samples/tree/master/plugins
 >      - https://google.github.io/blockly-samples/plugins/theme-deuteranopia/README.html
 >      - https://github.com/google/blockly-samples/tree/master/plugins/theme-deuteranopia
