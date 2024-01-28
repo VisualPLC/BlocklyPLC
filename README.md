@@ -87,6 +87,7 @@
 > - [ ] button import register programm or all programs database sqlite
 > - [ ] Select different themes..
 >      - https://google.github.io/blockly-samples/plugins/theme-deuteranopia/README.html
+>      - https://github.com/google/blockly-samples/tree/master/plugins/theme-deuteranopia
 > - [ ] document REST API endpoints with [**Swagger**](https://swagger.io/docs/)
 > - [ ] Be able to observe the server log on the frontend or Logview file, winston, etc..
 > - [x] Database sqlite diferents programm, edit, create,delete.
